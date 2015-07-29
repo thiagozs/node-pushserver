@@ -165,7 +165,7 @@
                             prev[curr.name] = curVal;
                         } else {
                             if (typeof prev[curr.name] !== "object")
-                                prev[curr.name] = [curVal];
+                                prev[curr.name] = [prev[curr.name]];
 
                             prev[curr.name].push(curVal);
                         }
